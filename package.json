@@ -1,0 +1,38 @@
+{
+  "title": "Clean It",
+  "name": "cleanit",
+  "version": "0.0.1",
+  "description": "One click to clear your cache, cookies, history data.",
+  "main": "data/js/addon-script.js",
+  "author": "ettoolong@hotmail.com",
+  "homepage": "https://addons.mozilla.org/zh-TW/firefox/user/ett-chung/",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
+  "permissions":{
+    "multiprocess": true,
+    "private-browsing": true
+  },
+  "icon": "resource://@cleanit/data/images/icon.svg",
+  "icon64": "resource://@cleanit/data/images/icon.svg",
+  "preferences": [{
+    "type": "bool",
+    "name": "showNotifications",
+    "value": true,
+    "title": "showNotifications",
+    "description": "showNotifications"
+  },
+  {
+    "name": "clearOnShutdown",
+    "type": "menulist",
+    "title": "Clear Option on Shutdown",
+    "value": 0,
+    "options": [{"value": 0, "label": "s1"},
+                {"value": 1, "label": "s2"},
+                {"value": 2, "label": "s3"}]
+  }]
+}
